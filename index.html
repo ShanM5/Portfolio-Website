@@ -4,9 +4,12 @@
     <meta charset="UTF 8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge>
     <meta name="viewpoint" content="width=device-width, inital-scale=1.0">
-    <title>Shan Personal Portfolio Website</title>
+    <title>Shan's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="images/tablogo.PNG" type="image/png">
+    <link rel="shortcut icon" href="images/tablogo.PNG" type="image/png">
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/40d7fcc152.js" crossorigin="anonymous"></script>
@@ -17,11 +20,12 @@
         <nav>
             <!---top left logo image--->
             <img src= "images\logo.png" class = "logo">
+            
             <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#services">Courses/Objectives</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Experience</a></li>                
                 <li><a href="#contact">Contact</a></li>
                 <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
@@ -29,8 +33,14 @@
         </nav>
         <div class="header-text">
             <p>Aspiring Software Developer</p>
-            <h1>Hi, I'm <span>Shan</span> <br> CS Major at Rutgers </span>NB</h1>
-            <a href="images/Copy of Shan Resume.pdf" download class="btn btn2">Download Resume</a>
+            <h1>Hi, I'm <span class="name">Shan</span> <br> CS Major at <span class="redText">Rutgers NB</span></h1>
+            <a href="images/Copy of Shan Resume.pdf" download class="btn btn2">Download Resume <i class="fa-solid fa-download"></i></a>
+            <div class = "linkedinfront">
+                <a href="https://www.linkedin.com/in/shan-malik-/"><i class="fa-brands fa-linkedin"></i></a>     
+                <a href="https://github.com/ShanM5"><i class="fa-brands fa-square-github"></i></a>     
+    
+                <p>Email: shanm3495@gmail.com</p>
+            </div>
 
         </div>
      </div>
@@ -43,7 +53,7 @@
         <div class="row">
             <div class="about-col-1">
                 <!---IMAGE HERE-->
-                <img src="images\suits.jpg"">
+                <img src="images\suits.jpg">
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
@@ -57,18 +67,16 @@
                 </div>
                 <div class="tab-contents active-tab" id="Skills">
                     <ul>
-                        <li><span>Programming Languages</span><br>Java, Python, C, HTML/CSS, JavaScript and SQL</li>
-                        <li><span>Software Skills</span><br>Microsoft Word, Excel, PowerPoint, Google Docs, Sheets, Slides, Adobe Photoshop</li>
-                        <li><span>Other</span><br>PC building experience, data entry</li>
+                        <li><span class="skills-title">Programming Languages and Frameworks</span><br>Languages: Java, Python, C, HTML/CSS, JavaScript and SQL.<br> Frameworks: React, Node.js, JavaFX</li>
+                        <li><span class="skills-title">IDEs / Software Skill</span><br>IDEs: VScode, IntelliJ, Eclipse<br>Command line: Proficient in using command line for tasks suchh as file manipulation, version control (Git), code compilation, etc.<br>Microsoft Word, Excel, PowerPoint, Google Docs, Sheets, Slides, Adobe Photoshop</li>
+                        <li><span class="skills-title">Other</span><br>PC building experience, data entry</li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="Education">
                     <ul>
                         <li><span>Rutgers University</span><br>Major in Computer Science and a minor Human Resource Managment. <br>Estimated date of graduation: 05/2024</li>
-                        <li><span>Certifications</span><br>Oracle Certified Foundations Associate, Java</li>
                         <li><span>Middlesex County College</span><br>Enrolled in the summer session of 2022</li>
-                        <li><span>Piscataway High School</span><br>Graduated 2020</li>
-
+                        <li><span>Certifications</span><br>Oracle Certified Foundations Associate, Java</li>
                     </ul>
                 </div>
                 <div class="tab-contents" id ="Experience">
@@ -92,36 +100,11 @@
     </div>
 </div>
 </div>
-<!--Services-->
 
-<div id="services">
-    <div class="container">
-        <h1 class="sub-title"> Courses and Objectives</h1>
-        <div class="services-list">
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Completed Courses</h2>
-                <p>  Data Structures : Fall 2022<br>Introduction to Computer Science : Spring 2022<br> Introduction to Linear Algebra : Spring 2022 <br> Calculus 2 : Summer 2022 <br> Computer Architecture : Spring 2023 <br> Software Methodology : Spring 2023 <br> Introduction to Discrete Structures 1 : Spring 2023 <br></p>
-                <!---<a href="#">Learn more</a>--->
-            </div>
-            <div>
-                <i class="fa-solid fa-bars-progress"></i>
-                <h2>Courses In Progess</h2>
-                <p>Introduction to Discrete Structures 2: Summer 2023 <br>  <br></p>
-                <!---<a href="#">Learn more</a>--->
-            </div>
-            <div>
-                <i class="fa-solid fa-gears"></i>                <h2>What I'm Working On and Interersted in?</h2>
-                <p>I am currently interested in expanding my skill set in Python and learning more about AI, with the potential of implementing it into a project that I create. Additionally, as more of a hobby, I am conducting research and practicing with the Unity platform.  </p>
-                <!---<a href="#">Learn more</a>--->
-            </div>
-        </div>
-    </div>
-</div>
 <!--------Portfolio-->
 <div id="portfolio">
     <div class="container">
-        <h1 class="sub-title"> Project Portfolio</h1>
+        <h1 class="sub-title"> Project Portfolio     <i class="fa-regular fa-folder-open"></i></h1> 
         <div class="work-list">
             <div class="work">
                 <img id="carouselImage" src = "images/donutMenu.png">
@@ -138,14 +121,7 @@
                     <a href="https://github.com/ShanM5/GameOfLife"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
-            <div class = "work">
-                <img src = "images/huffmantree.png">
-                <div class="layer">
-                    <h3>Huffman Coding</h3>
-                    <p>I implemented a text file compression program using Huffman's algorithm. This involved creating and managing binary search trees based on the character frequencies in the input file. By using queues, I constructed the Huffman Tree. Then, I traversed the binary search tree to generate an array of character encodings, which allowed for file encoding and decoding.</p>
-                    <a href="https://github.com/ShanM5/Huffman-Coding-Text-Compression"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
+            
             <div class = work>
                 <img src="images/classroom.jpg">
                 <div class="layer">
@@ -158,6 +134,33 @@
         <a href="https://github.com/ShanM5?tab=repositories" class="btn">See more</a>
     </div>
 </div>
+
+<!--Services-->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title"> Work and Class Experience</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-computer"></i>
+                <h2>Retail Sales Technology Associate @<br>Staples South Plainfield <br> July 2022 - August 2022</h2>
+                <p> Offer basic technology help and suggestions to customers for their personal computers, printers and other devices. Advise customers on which computers, printers, and/or accessories would meet their needs if they needed any help, as well as informing them of in-store warranty and other paid services</p>
+                <!---<a href="#">Learn more</a>--->
+            </div>
+            <div>
+                <i class="fa-solid fa-vials"></i>
+                <h2>Specimen Processor (Data Entry) @<br> Accurate Diagnostics <br>Dec 2021 - Jan 2022 </h2>
+                <p>Process COVID-19 tests into company systems during the peak of the pandemic. Collaborate with other employees in order to efficiently manage and safely store COVID-19 test samples while keeping up with the rapid influx of tests and positive cases in the tri-state area. Introduce patient data into company systems as well as update current patient data in our company systems.<br></p>
+                <!---<a href="#">Learn more</a>--->
+            </div>
+            <div>
+                <i class="fa-solid fa-gears"></i>                <h2>Courses Taken <br></h2>
+                <p> <a href="https://introcs.cs.rutgers.edu/">Introduction To Computer Science</a> <br> <a href ="https://ds.cs.rutgers.edu/"> Data Structures </a> <br> <a href = "https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-211-computer-architecture" >Computer Architecture </a><br> <a href="https://discrete.cs.rutgers.edu/" >Introduction to Discrete Structures 1 </a> <br> <a href ="https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-213-software-methodology">Software Methodology </a> <br> <a href="https://www.math.rutgers.edu/academics/undergraduate/courses/948-01-640-250-introductory-linear-algebra">Introuction to Linear Algebra </a><br> <a href="https://www.math.rutgers.edu/academics/undergraduate/courses/942-01-640-152-calculus-ii-for-the-mathematical-and-physical-sciences"> Calculus 2 </a> </p>
+                <!---<a href="#">Learn more</a>--->
+            </div>
+        </div>
+    </div>
+</div>
 <!--------contact-->
 
 <div id="contact">
@@ -166,14 +169,15 @@
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
                 <p><i class="fa-solid fa-paper-plane"></i> shanm3495@gmail.com</p>
-                <p><i class="fa-brands fa-discord"></i>Shan #2741</p>
+                <p><i class="fa-brands fa-discord"></i>shan_m</p>
                 <div class="social-icons">
                     <a href="https://www.linkedin.com/in/shan-malik-/"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://github.com/ShanM5"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://twitter.com/Shan_M5"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://twitter.com/Shan_M5"><i class="fa-brands fa-x-twitter"></i></i></a>
                     <a href="https://www.instagram.com/shanrightnow/"><i class="fa-brands fa-instagram"></i></a>
+                
                 </div>
-                <a href="images/Copy of Shan Resume.pdf" download class="btn btn2">Download Resume</a>
+                <a href="images/Copy of Shan Resume.pdf" download class="btn btn2">Download Resume <i class="fa-solid fa-download"></i></a>
             </div>
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
