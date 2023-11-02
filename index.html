@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang = "en">
 <head>
-
+    
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-L7R4JYNYKZ"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H0K4FF10TR"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-L7R4JYNYKZ');
+  gtag('config', 'G-H0K4FF10TR');
 </script>
-
 
     <meta charset="UTF 8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge>
@@ -28,48 +27,88 @@
 </head>
 <body>
 <div id="header">
-     <div class="container">
-        <nav>
-            <!---top left logo image--->
-            <img src= "images\logo.png" class = "logo">
-            
-            <ul id="sidemenu">
+      <div class="container">
+          <nav>
+           <!---top left logo image--->
+            <img src="images\logo.png" class="logo">
+               <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#services">Experience</a></li>                
-                <li><a href="#contact">Contact</a></li>
-                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-            </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <div class="header-text">
-            <p>Aspiring Software Developer</p>
-            <h1>Hi, I'm <span class="name">Shan</span> <br> CS Major at <span class="redText">Rutgers NB</span></h1>
-            <a href="images/Copy of Shan Resume.pdf" download class="btn btn2">Download Resume <i class="fa-solid fa-download"></i></a>
-            <div class = "linkedinfront">
-                <a href="https://www.linkedin.com/in/shan-malik-/"><i class="fa-brands fa-linkedin"></i></a>     
-                <a href="https://github.com/ShanM5"><i class="fa-brands fa-square-github"></i></a>     
-    
-                <p>Email: shanm3495@gmail.com</p>
-            </div>
-
+                   <li><a href="#about">About</a></li>
+                   <li><a href="#portfolio">Portfolio</a></li>
+                   <li><a href="#services">Experience</a></li>                
+                   <li><a href="#contact">Contact</a></li>
+                   <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+               </ul>
+               <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+           </nav>
+           <div class="header-text">
+               <p>Aspiring Software Developer</p>
+               <h1>Hi, I'm <span class="name">Shan</span> <br> CS Major at <span class="redText">Rutgers NB</span></h1>
+               <a href="images/Shan's_Resume.pdf" download class="btn btn2">Download Resume <i class="fa-solid fa-download"></i></a>
+               <div class="linkedinfront">
+                   <a href="https://www.linkedin.com/in/shan-malik/"><i class="fa-brands fa-linkedin"></i></a>     
+                   <a href="https://github.com/ShanM5"><i class="fa-brands fa-square-github"></i></a>     
+                   <p>Email: shanm3495@gmail.com</p>
+               </div>
+           </div>
+           <!-- Add the image here -->
+           <div class="header-image">
+               <img src="images/suitsHeader.jpg" alt="Suits Image">
+           </div>
         </div>
-     </div>
-</div>
+   </div>
+   
+
 
 <div>
+
+<!--------Portfolio-->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title"> Project Portfolio     <i class="fa-regular fa-folder-open"></i></h1> 
+        <div class="work-list">
+            <div class="work">
+                <img id="carouselImage" src = "images/donutMenu.png">
+                <div class="layer">
+                    <h3>Donut Shop Menu</h3>
+                    <p>Developed two versions of an app for a nonexistent donut store, in Android Studio and in JavaFX, that allows users to add donuts and coffees to their basket, edit and remove contents in their basket, and place the order to the store, cancel a store order and export the orders into a text file.</p>
+                    <a href="https://github.com/ShanM5/Donut-Store-Application"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    
+                </div>
+            </div>
+            <div class="work">
+                <img id="carouselImageTwo" src = "images/conway2.png">
+                <div class="layer">
+                    <h3>Conway's Game of Life</h3>
+                    <p>Developed the backend logic of John Conway's Game of Life using java. Receives text input from the user to create the 2D array board, methods that identify alive cells and their neighbors, computing the grid's new generations following the game’s rules, and count the number of communities using weighted-quick-union</p>
+                    <a href="https://github.com/ShanM5/GameOfLife"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            
+            <div class = work>
+                <img src="images/classroom.jpg">
+                <div class="layer">
+                    <h3>Kindergarten Class Simulator</h3>
+                    <p>Created a kindergarten simulation that has students in line (a singularly linked list), and has the options to seat them in a 2d array based on seating availability, put them into a musical chairs circular linked list, play a game of musical chairs, put them back into their seats starting from the winner, options to delete and add students from any of the data structures mentioned.</p>
+                    <a href="https://github.com/ShanM5/RUKindergarten-Class-Simulator"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/ShanM5?tab=repositories" class="btn">See more</a>
+    </div>
+</div>
+
 <!----------about----------->
 <div id="about">
     <div class="container">
         <div class="row">
             <div class="about-col-1">
                 <!---IMAGE HERE-->
-                <img src="images\suits.jpg">
+                <img src="images\cmpcode.jpg">
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
-                <p>I am currently an upcoming senior at Rutgers University of New Brunswick, majoring in Computer Science and minoring Human Resource Management. I have multiple interests in the tech field and am currently learning and developing my skills, mainly with a focus on programming, and searching for software development internships, and other part-time opportunities related to my interested field as well as any opportunity on campus.</p>
+                <p>I'm a senior at Rutgers University, New Brunswick, majoring in Computer Science and minoring in Human Resource Management. My diverse interests in the tech field keep me engaged in continuous learning and skill development. As an aspiring software developer, I'm eagerly preparing for potential summer 2024 internships in software development roles. My academic journey has honed my problem-solving skills, and my passion for programming drives me to create innovative solutions. I'm actively seeking opportunities to apply my skills, contribute to impactful projects, and connect with like-minded professionals. Feel free to connect with me on LinkedIn!</p>
                 
                 <div class="tab-titles">
                     <p class = "tab-links active-link" onclick="opentab('Skills')">Skills</p>
@@ -86,7 +125,7 @@
                 </div>
                 <div class="tab-contents" id="Education">
                     <ul>
-                        <li><span>Rutgers University</span><br>Major in Computer Science and a minor Human Resource Managment. <br>Estimated date of graduation: 05/2024</li>
+                        <li><span>Rutgers University</span><br>Major in Computer Science and a minor Human Resource Managment. <br>Estimated date of graduation: 12/2024</li>
                         <li><span>Middlesex County College</span><br>Enrolled in the summer session of 2022</li>
                         <li><span>Certifications</span><br>Oracle Certified Foundations Associate, Java</li>
                     </ul>
@@ -111,40 +150,6 @@
         </div>
     </div>
 </div>
-</div>
-
-<!--------Portfolio-->
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title"> Project Portfolio     <i class="fa-regular fa-folder-open"></i></h1> 
-        <div class="work-list">
-            <div class="work">
-                <img id="carouselImage" src = "images/donutMenu.png">
-                <div class="layer">
-                    <h3>Donut Shop Menu</h3>
-                    <p>Developed two versions of an app for a nonexistent donut store, in Android Studio and in JavaFX, that allows users to add donuts and coffees to their basket, edit and remove contents in their basket, and place the order to the store, cancel a store order and export the orders into a text file.</p>
-                </div>
-            </div>
-            <div class="work">
-                <img id="carouselImageTwo" src = "images/conway2.png">
-                <div class="layer">
-                    <h3>Conway's Game of Life</h3>
-                    <p>Developed the backend logic of John Conway's Game of Life using java. Receives text input from the user to create the 2D array board, methods that identify alive cells and their neighbors, computing the grid's new generations following the game’s rules, and count the number of communities using weighted-quick-union</p>
-                    <a href="https://github.com/ShanM5/GameOfLife"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            
-            <div class = work>
-                <img src="images/classroom.jpg">
-                <div class="layer">
-                    <h3>Kindergarten Class Simulator</h3>
-                    <p>Created a kindergarten simulation that has students in line (a singularly linked list), and has the options to seat them in a 2d array based on seating availability, put them into a musical chairs circular linked list, play a game of musical chairs, put them back into their seats starting from the winner, options to delete and add students from any of the data structures mentioned.</p>
-                    <a href="https://github.com/ShanM5/RUKindergarten-Class-Simulator"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-        </div>
-        <a href="https://github.com/ShanM5?tab=repositories" class="btn">See more</a>
-    </div>
 </div>
 
 <!--Services-->
@@ -189,7 +194,7 @@
                     <a href="https://www.instagram.com/shanrightnow/"><i class="fa-brands fa-instagram"></i></a>
                 
                 </div>
-                <a href="images/Copy of Shan Resume.pdf" download class="btn btn2">Download Resume <i class="fa-solid fa-download"></i></a>
+                <a href="images/Shan's_Resume.pdf" download class="btn btn2">Download Resume <i class="fa-solid fa-download"></i></a>
             </div>
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
